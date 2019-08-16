@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Quiv Assignment!</title>
+  </head>
+  <body>
+   
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Quiv</a>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+<div class="col-md-2 col-md-offset-0 sidebar"> 
+<p><b>Filter Category</b></p>
+<select class="form-control" onchange="CategoryView(this.value)">
+    <option>All</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Kids</option>
+  </select> 
+<br>
+  <p><b>Filter Price</b></p>
+  <div class="form-check">
+  <input class="form-check-input" name="checkbox" onchange="filtercheck()" type="checkbox" value="200" id="defaultCheck">
+  <label class="form-check-label"  for="defaultCheck1">
+   Upto 200
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="300" id="defaultCheck"  name="checkbox" onchange="filtercheck()" >
+  <label class="form-check-label" for="defaultCheck2">
+    Upto 300
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="500" id="defaultCheck"  name="checkbox" onchange="filtercheck()" >
+  <label class="form-check-label" for="defaultCheck2">
+    Upto 500
+  </label>
+</div>
+<br>
+<p id="brand-parent"><b>Filter Brand</b></p>
+<button type="button" onclick="filterbrand()"  class="btn btn-outline-primary btn-sm">Apply</button>
+<p id="color-parent"><b>Filter Color</b></p>
+<button type="button" onclick="filtercolor()"  class="btn btn-outline-primary btn-sm">Apply</button>
+</div>
+<div class="col-md-10 product" id="product">
+<div class="buttonSort">  
+<label>Sort:</label>  
+<button type="button"  onclick="sortable()" class="btn btn-default btn-sm" aria-label="Right Align">
+  <i class="large material-icons">import_export</i>
+</button>
+</div>
+    <div class="row" id="ads">
+    <!-- Category Card -->
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4 ">
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Bootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <script type="text/javascript" src="main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
