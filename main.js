@@ -84,11 +84,10 @@ for(var x = 0, l = all_color.length; x < l;  x++)
 {
     cIds.push(all_color[x].value);
 }
-	var arr=[];
-	var arr2=[];
+		var arr=[];
 		cIds.map(function(itemscid){	
 		const value1=product.filter(d => d.brand == itemscid);
-			arr.push(value1);		
+		arr.push(value1);		
 })
 document.getElementById("ads").innerHTML=`
 ${arr.map(function(itemvalue){	
@@ -137,16 +136,14 @@ for(var x = 0, l = all_color.length; x < l;  x++)
 {
     cIds.push(all_color[x].value);
 }
-	var arr=[];
-	var arr2=[];
+		var arr=[];
 		cIds.map(function(itemscid){	
 		const value1=product.filter(d => d.color == itemscid);
-			arr.push(value1);		
+		arr.push(value1);		
 })
 document.getElementById("ads").innerHTML=`
 ${arr.map(function(itemvalue){	
 		return itemvalue.map(function(items){
-			console.log("hiiSS")
 		return`  <div class="col-md-4">
         <div class="card rounded">
             <div class="card-image">
@@ -223,9 +220,7 @@ function CategoryView(value){
             </div>
         </div>
     </div>`
-	
 }).join('')}`
-
 	}else
 	{
 const arr1 = product.filter(d => d.cat ==value);
